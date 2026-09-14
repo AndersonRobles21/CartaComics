@@ -1,58 +1,617 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Carta Chaval comics</title>
-    <link rel="stylesheet" href="css/estilo.css" />
-  </head>
-  <body>
-    <h1 class="tituloCarta">Carta Comics</h1>
-    <div class="hamburguesas">
-      <p>Hamburguesas</p>
-      <li>Iron Man</li>
-      <li>Dead Pool</li>
-      <li>Doctor Strange</li>
-      <li>Hulk</li>
-      <li>Ant Man</li>
-      <li>Venom</li>
-      <li>Capitan America</li>
+    <title>Carta Comics</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         LOGO
+    ========================== -->
+
+    <header class="encabezado">
+
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Logo del restaurante">
+        </div>
+
+        <h1 class="tituloCarta">CARTA COMICS</h1>
+
+        <p class="subtitulo">
+            ¡Elige tu personaje favorito!
+        </p>
+
+    </header>
+
+
+    <!-- =========================
+         HAMBURGUESAS
+    ========================== -->
+
+    <section class="categoria categoria-roja">
+
+        <h2>HAMBURGUESAS</h2>
+
+        <div class="productos">
+
+            <article class="producto" onclick="mostrarInfo('ironman')">
+
+                <img src="img/iron-man.jpg" alt="Hamburguesa Iron Man">
+
+                <h3>Iron Man</h3>
+
+                <p>
+                    Hamburguesa especial de la casa con ingredientes
+                    seleccionados.
+                </p>
+
+                <span class="precio">$18.000</span>
+
+            </article>
+
+
+            <article class="producto" onclick="mostrarInfo('deadpool')">
+
+                <img src="img/deadpool.jpg" alt="Hamburguesa Deadpool">
+
+                <h3>Deadpool</h3>
+
+                <p>
+                    Una hamburguesa con mucho sabor y actitud.
+                </p>
+
+                <span class="precio">$19.000</span>
+
+            </article>
+
+
+            <article class="producto" onclick="mostrarInfo('doctor-strange')">
+
+                <img src="img/doctor-strange.jpg" alt="Hamburguesa Doctor Strange">
+
+                <h3>Doctor Strange</h3>
+
+                <p>
+                    Una combinación especial llena de sabor.
+                </p>
+
+                <span class="precio">$20.000</span>
+
+            </article>
+
+
+            <article class="producto" onclick="mostrarInfo('hulk')">
+
+                <img src="img/hulk.jpg" alt="Hamburguesa Hulk">
+
+                <h3>Hulk</h3>
+
+                <p>
+                    Una hamburguesa grande para un gran apetito.
+                </p>
+
+                <span class="precio">$21.000</span>
+
+            </article>
+
+
+            <article class="producto" onclick="mostrarInfo('ant-man')">
+
+                <img src="img/ant-man.jpg" alt="Hamburguesa Ant Man">
+
+                <h3>Ant Man</h3>
+
+                <p>
+                    Pequeña en nombre, gigante en sabor.
+                </p>
+
+                <span class="precio">$18.000</span>
+
+            </article>
+
+
+            <article class="producto" onclick="mostrarInfo('venom')">
+
+                <img src="img/venom.jpg" alt="Hamburguesa Venom">
+
+                <h3>Venom</h3>
+
+                <p>
+                    Una combinación intensa para los amantes del sabor.
+                </p>
+
+                <span class="precio">$20.000</span>
+
+            </article>
+
+
+            <article class="producto" onclick="mostrarInfo('capitan-america')">
+
+                <img src="img/capitan-america.jpg" alt="Hamburguesa Capitán América">
+
+                <h3>Capitán América</h3>
+
+                <p>
+                    Una hamburguesa clásica con estilo heroico.
+                </p>
+
+                <span class="precio">$19.000</span>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PERROS CALIENTES
+    ========================== -->
+
+    <section class="categoria categoria-azul">
+
+        <h2>PERROS CALIENTES</h2>
+
+        <div class="productos">
+
+            <article class="producto" onclick="mostrarInfo('aquaman')">
+
+                <img src="img/aquaman.jpg" alt="Perro Aquaman">
+
+                <h3>Aquaman</h3>
+
+                <p>
+                    Perro caliente especial de la casa.
+                </p>
+
+                <span class="precio">$15.000</span>
+
+            </article>
+
+
+            <article class="producto" onclick="mostrarInfo('gamora')">
+
+                <img src="img/gamora.jpg" alt="Perro Gamora">
+
+                <h3>Gamora</h3>
+
+                <p>
+                    Una combinación llena de sabor.
+                </p>
+
+                <span class="precio">$16.000</span>
+
+            </article>
+
+
+            <article class="producto" onclick="mostrarInfo('thanos')">
+
+                <img src="img/thanos.jpg" alt="Perro Thanos">
+
+                <h3>Thanos</h3>
+
+                <p>
+                    Un perro caliente para un gran apetito.
+                </p>
+
+                <span class="precio">$17.000</span>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         MAZORCADAS
+    ========================== -->
+
+    <section class="categoria categoria-cyan">
+
+        <h2>MAZORCADAS</h2>
+
+        <div class="productos">
+
+            <article class="producto" onclick="mostrarInfo('superman')">
+
+                <img src="img/superman.jpg" alt="Mazorcada Superman">
+
+                <h3>Superman</h3>
+
+                <p>
+                    Mazorcada especial con ingredientes de la casa.
+                </p>
+
+                <span class="precio">$17.000</span>
+
+            </article>
+
+
+            <article class="producto" onclick="mostrarInfo('doctor-tocino')">
+
+                <img src="img/doctor-tocino.jpg" alt="Mazorcada Doctor Tocino">
+
+                <h3>Doctor Tocino</h3>
+
+                <p>
+                    Mazorcada con una combinación irresistible.
+                </p>
+
+                <span class="precio">$18.000</span>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PATACONES
+    ========================== -->
+
+    <section class="categoria categoria-medio">
+
+        <h2>PATACONES</h2>
+
+        <div class="productos">
+
+            <article class="producto" onclick="mostrarInfo('pantera-negra')">
+
+                <img src="img/pantera-negra.jpg" alt="Patacón Pantera Negra">
+
+                <h3>Pantera Negra</h3>
+
+                <p>
+                    Patacón especial con ingredientes de la casa.
+                </p>
+
+                <span class="precio">$16.000</span>
+
+            </article>
+
+
+            <article class="producto" onclick="mostrarInfo('flash')">
+
+                <img src="img/flash.jpg" alt="Patacón Flash">
+
+                <h3>Flash</h3>
+
+                <p>
+                    Un patacón rápido, delicioso y lleno de sabor.
+                </p>
+
+                <span class="precio">$16.000</span>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         AREPAS
+    ========================== -->
+
+    <section class="categoria categoria-brillante">
+
+        <h2>AREPAS</h2>
+
+        <div class="productos">
+
+            <article class="producto" onclick="mostrarInfo('spiderman')">
+
+                <img src="img/spiderman.jpg" alt="Arepa Spiderman">
+
+                <h3>Spiderman</h3>
+
+                <p>
+                    Arepa especial con ingredientes seleccionados.
+                </p>
+
+                <span class="precio">$15.000</span>
+
+            </article>
+
+
+            <article class="producto" onclick="mostrarInfo('mujer-maravilla')">
+
+                <img src="img/mujer-maravilla.jpg" alt="Arepa Mujer Maravilla">
+
+                <h3>Mujer Maravilla</h3>
+
+                <p>
+                    Una arepa poderosa y llena de sabor.
+                </p>
+
+                <span class="precio">$16.000</span>
+
+            </article>
+
+
+            <article class="producto" onclick="mostrarInfo('harley-quinn')">
+
+                <img src="img/harley-quinn.jpg" alt="Arepa Harley Quinn">
+
+                <h3>Harley Quinn</h3>
+
+                <p>
+                    Una combinación diferente y divertida.
+                </p>
+
+                <span class="precio">$16.000</span>
+
+            </article>
+
+
+            <article class="producto" onclick="mostrarInfo('nebula')">
+
+                <img src="img/nebula.jpg" alt="Arepa Nebula">
+
+                <h3>Nebula</h3>
+
+                <p>
+                    Una arepa especial para los amantes del sabor.
+                </p>
+
+                <span class="precio">$17.000</span>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         SALCHIPAPAS
+         SIN COMBO
+    ========================== -->
+
+    <section class="categoria categoria-oscura">
+
+        <h2>SALCHIPAPAS</h2>
+
+        <div class="productos">
+
+            <article class="producto" onclick="mostrarInfo('joker')">
+
+                <img src="img/joker.jpg" alt="Salchipapa Joker">
+
+                <h3>Joker</h3>
+
+                <p>
+                    Salchipapa especial de la casa.
+                </p>
+
+                <span class="precio">$17.000</span>
+
+            </article>
+
+
+            <article class="producto" onclick="mostrarInfo('batman-robin')">
+
+                <img src="img/batman-robin.jpg" alt="Salchipapa Batman y Robin">
+
+                <h3>Batman y Robin</h3>
+
+                <p>
+                    Una combinación para compartir.
+                </p>
+
+                <span class="precio">$20.000</span>
+
+            </article>
+
+
+            <article class="producto" onclick="mostrarInfo('rocket-man')">
+
+                <img src="img/rocket-man.jpg" alt="Salchipapa Rocket Man">
+
+                <h3>Rocket Man</h3>
+
+                <p>
+                    Una salchipapa explosiva de sabor.
+                </p>
+
+                <span class="precio">$18.000</span>
+
+            </article>
+
+
+            <article class="producto" onclick="mostrarInfo('black-adam')">
+
+                <img src="img/black-adam.jpg" alt="Salchipapa Black Adam">
+
+                <h3>Black Adam</h3>
+
+                <p>
+                    Una salchipapa con carácter.
+                </p>
+
+                <span class="precio">$19.000</span>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         MENU INFANTIL
+         SIN COMBO
+    ========================== -->
+
+    <section class="categoria categoria-infantil">
+
+        <h2>MENÚ INFANTIL</h2>
+
+        <div class="productos">
+
+            <article class="producto" onclick="mostrarInfo('thor')">
+
+                <img src="img/thor.jpg" alt="Menú Thor Rompetormentas">
+
+                <h3>Thor Rompetormentas</h3>
+
+                <p>
+                    Una opción especial para los pequeños héroes.
+                </p>
+
+                <span class="precio">$13.000</span>
+
+            </article>
+
+
+            <article class="producto" onclick="mostrarInfo('capitana-marvel')">
+
+                <img src="img/capitana-marvel.jpg" alt="Menú Capitana Marvel">
+
+                <h3>Capitana Marvel</h3>
+
+                <p>
+                    Una opción deliciosa para los pequeños.
+                </p>
+
+                <span class="precio">$13.000</span>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         MODAL
+    ========================== -->
+
+    <div id="modalProducto" class="modal">
+
+        <div class="modal-contenido">
+
+            <button class="cerrar" onclick="cerrarModal()">
+                ×
+            </button>
+
+
+           <img id="modalImagen" src="" alt="" class="modal-imagen">
+
+<h2 id="modalNombre">Producto</h2>
+
+<p id="modalDescripcion">
+    Descripción del producto.
+</p>
+
+<div class="ingredientes">
+    <h3>🍴 Ingredientes</h3>
+
+    <ul id="modalIngredientes">
+        <!-- Los ingredientes se cargan automáticamente -->
+    </ul>
+</div>
+
+<div class="modal-precio">
+    <span>Precio:</span>
+    <strong id="modalPrecio">$0</strong>
+</div>
+
+                <strong id="modalPrecio">
+                    $0
+                </strong>
+
+            </div>
+
+
+            <!-- COMBO -->
+
+            <div id="seccionCombo" class="combo">
+
+                <div class="combo-titulo">
+                    ⚡ ¡CONVIÉRTELO EN COMBO!
+                </div>
+
+
+                <p>
+                    Incluye:
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        🥤 Bebida 237 ml / Agua
+                    </li>
+
+                    <li>
+                        🍟 Papa francesa 150 g
+                    </li>
+
+                </ul>
+
+
+                <div class="combo-precio">
+
+                    + $6.000
+
+                </div>
+
+
+                <label class="combo-check">
+
+                    <input
+                        type="checkbox"
+                        id="checkboxCombo"
+                        onchange="actualizarCombo()"
+                    >
+
+                    <span>
+                        Agregar combo
+                    </span>
+
+                </label>
+
+            </div>
+
+
+            <!-- PRECIO FINAL -->
+
+            <div class="precio-final">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="modalPrecioFinal">
+                    $0
+                </strong>
+
+            </div>
+
+        </div>
+
     </div>
-    <div class="perros">
-      <p>Perros Calientes</p>
-      <li>Aquaman</li>
-      <li>Gamora</li>
-      <li>Thanos</li>
-    </div>
-    <div class="mazorcadas">
-      <p>Mazorcadas</p>
-      <li>Superman</li>
-      <li>Doctor Tocino</li>
-    </div>
-    <div class="patacones">
-        <p>Patacones</p>
-        <li>Pantera Negra</li>
-        <li>Flash</li>
-    </div>
-    <div class="arepas">
-        <p>Arepas</p>
-        <li>Spiderman</li>
-        <li>Mujer Maravilla</li>
-        <li>Harley Queen</li>
-        <li>Nebula</li>
-    </div>
-    <div class="salchipapa">
-        <p>Salchipapa</p>
-        <li>Jocker</li>
-        <li>Batman y Robin </li>
-        <li>Rocket MAn</li>
-        <li>Black Adam</li>
-    </div>
-    <div class="infantil">
-        <p>Menu Infantil</p>
-        <li>Thor Rompetormentas</li>
-        <li>Capitana Marvel</li>
-    </div>
-  </body>
+
+
+    <!-- JavaScript -->
+
+    <script src="./js/animacio.js"></script>
+
+</body>
 </html>
