@@ -1,10 +1,7 @@
 const PRECIO_COMBO = 6000;
 
 const productos = {
-    // =========================
-    // 🍔 HAMBURGUESAS
-    // =========================
-
+    //  HAMBURGUESAS
     ironman: {
         nombre: "Iron Man",
         imagen: "img/iron-man.jpg",
@@ -18,10 +15,9 @@ const productos = {
             "Cebolla",
             "Salsa de la casa"
         ],
-        precio: 18000,
+        precio: 11700,
         combo: true
     },
-
     deadpool: {
         nombre: "Deadpool",
         imagen: "img/deadpool.jpg",
@@ -35,7 +31,7 @@ const productos = {
             "Lechuga",
             "Salsa picante"
         ],
-        precio: 19000,
+        precio: 10200,
         combo: true
     },
 
@@ -51,7 +47,7 @@ const productos = {
             "Lechuga",
             "Salsa especial"
         ],
-        precio: 20000,
+        precio: 16400,
         combo: true
     },
 
@@ -68,7 +64,7 @@ const productos = {
             "Cebolla",
             "Salsa de la casa"
         ],
-        precio: 23000,
+        precio: 21600,
         combo: true
     },
 
@@ -84,7 +80,7 @@ const productos = {
             "Tomate",
             "Salsa especial"
         ],
-        precio: 17000,
+        precio: 10200,
         combo: true
     },
 
@@ -100,7 +96,7 @@ const productos = {
             "Jalapeños",
             "Salsa BBQ"
         ],
-        precio: 20000,
+        precio: 15800,
         combo: true
     },
 
@@ -118,15 +114,11 @@ const productos = {
             "Cebolla",
             "Salsa de la casa"
         ],
-        precio: 21000,
+        precio: 26000,
         combo: true
     },
 
-
-    // =========================
-    // 🌭 PERROS CALIENTES
-    // =========================
-
+    // PERROS CALIENTES
     aquaman: {
         nombre: "Aquaman",
         imagen: "img/aquaman.jpg",
@@ -140,7 +132,7 @@ const productos = {
             "Mostaza",
             "Mayonesa"
         ],
-        precio: 13000,
+        precio: 9300,
         combo: true
     },
 
@@ -156,7 +148,7 @@ const productos = {
             "Papas ripio",
             "Salsas de la casa"
         ],
-        precio: 15000,
+        precio: 14100,
         combo: true
     },
 
@@ -172,15 +164,10 @@ const productos = {
             "Cebolla",
             "Salsas de la casa"
         ],
-        precio: 18000,
+        precio: 9700,
         combo: true
     },
-
-
-    // =========================
-    // 🌽 MAZORCADAS
-    // =========================
-
+    // MAZORCADAS
     superman: {
         nombre: "Superman",
         imagen: "img/superman.jpg",
@@ -193,7 +180,7 @@ const productos = {
             "Papas ripio",
             "Salsas de la casa"
         ],
-        precio: 18000,
+        precio: 14000,
         combo: true
     },
 
@@ -209,15 +196,11 @@ const productos = {
             "Papas ripio",
             "Salsa BBQ"
         ],
-        precio: 20000,
+        precio: 16800,
         combo: true
     },
 
-
-    // =========================
     // 🟨 PATACONES
-    // =========================
-
     "pantera-negra": {
         nombre: "Pantera Negra",
         imagen: "img/pantera-negra.jpg",
@@ -230,7 +213,7 @@ const productos = {
             "Guacamole",
             "Salsas de la casa"
         ],
-        precio: 18000,
+        precio: 21100,
         combo: true
     },
 
@@ -246,15 +229,10 @@ const productos = {
             "Papas ripio",
             "Salsas de la casa"
         ],
-        precio: 17000,
+        precio: 14000,
         combo: true
     },
-
-
-    // =========================
-    // 🫓 AREPAS
-    // =========================
-
+    // AREPAS
     spiderman: {
         nombre: "Spiderman",
         imagen: "img/spiderman.jpg",
@@ -266,7 +244,7 @@ const productos = {
             "Maíz",
             "Salsa de la casa"
         ],
-        precio: 15000,
+        precio: 9400,
         combo: true
     },
 
@@ -281,7 +259,7 @@ const productos = {
             "Aguacate",
             "Salsa especial"
         ],
-        precio: 17000,
+        precio: 9600,
         combo: true
     },
 
@@ -297,7 +275,7 @@ const productos = {
             "Maíz",
             "Salsa BBQ"
         ],
-        precio: 17000,
+        precio: 10000,
         combo: true
     },
 
@@ -313,15 +291,11 @@ const productos = {
             "Maíz",
             "Salsas de la casa"
         ],
-        precio: 19000,
+        precio: 10400,
         combo: true
     },
 
-
-    // =========================
-    // 🍟 SALCHIPAPAS
-    // =========================
-
+    // SALCHIPAPAS
     joker: {
         nombre: "Joker",
         imagen: "img/joker.jpg",
@@ -334,7 +308,7 @@ const productos = {
             "Maíz",
             "Salsas de la casa"
         ],
-        precio: 17000,
+        precio: 8900,
         combo: false
     },
 
@@ -350,7 +324,7 @@ const productos = {
             "Tocineta",
             "Salsas de la casa"
         ],
-        precio: 22000,
+        precio: 20500,
         combo: false
     },
 
@@ -367,7 +341,7 @@ const productos = {
             "Tocineta",
             "Salsa BBQ"
         ],
-        precio: 22000,
+        precio: 8900,
         combo: false
     },
 
@@ -384,14 +358,13 @@ const productos = {
             "Tocineta",
             "Salsas de la casa"
         ],
-        precio: 25000,
+        precio: 18800,
         combo: false
     },
 
 
-    // =========================
-    // 🧒 MENÚ INFANTIL
-    // =========================
+    // MENÚ INFANTIL
+
 
     thor: {
         nombre: "Thor Rompetormentas",
@@ -403,7 +376,7 @@ const productos = {
             "Papas francesas",
             "Bebida"
         ],
-        precio: 14000,
+        precio: 19000,
         combo: false
     },
 
@@ -418,7 +391,7 @@ const productos = {
             "Papas francesas",
             "Bebida"
         ],
-        precio: 14000,
+        precio: 19000,
         combo: false
     }
 };
