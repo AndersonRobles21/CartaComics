@@ -1,0 +1,311 @@
+/* =========================================================
+   CARTA COMICS - MODAL
+   Estilos del modal de producto
+========================================================= */
+
+/* =========================================================
+   BACKDROP DEL MODAL
+========================================================= */
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-modal-backdrop);
+  padding: var(--espacio-md);
+  background: rgba(0, 0, 0, 0.88);
+  backdrop-filter: blur(6px);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.activo {
+  display: flex;
+}
+
+/* Prevenir scroll del body cuando modal abierto */
+body.modal-abierto {
+  overflow: hidden;
+  touch-action: none;
+}
+
+/* =========================================================
+   CONTENIDO DEL MODAL
+========================================================= */
+
+.modal-contenido {
+  position: relative;
+  width: 100%;
+  max-width: var(--modal-max-width);
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: var(--modal-padding);
+  background: linear-gradient(145deg, #11141a, #030405);
+  border: 2px solid var(--color-azul-3);
+  border-radius: var(--radio-lg);
+  box-shadow: var(--sombra-modal);
+  animation: aparecer 0.25s ease;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: scale(0.92) translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Scrollbar del modal */
+.modal-contenido::-webkit-scrollbar {
+  width: 7px;
+}
+.modal-contenido::-webkit-scrollbar-track {
+  background: var(--color-negro);
+}
+.modal-contenido::-webkit-scrollbar-thumb {
+  background: var(--color-azul-1);
+  border-radius: var(--radio-pill);
+}
+
+/* =========================================================
+   BOTÓN CERRAR
+========================================================= */
+
+.cerrar {
+  position: absolute;
+  top: var(--espacio-sm);
+  right: var(--espacio-sm);
+  z-index: 5;
+  width: 44px;
+  height: 44px;
+  border: 2px solid var(--color-rojo);
+  border-radius: var(--radio-full);
+  background: rgba(0, 0, 0, 0.85);
+  color: var(--color-rojo);
+  font-size: 1.75rem;
+  font-weight: bold;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transicion-rapida);
+  touch-action: manipulation;
+}
+
+.cerrar:hover,
+.cerrar:focus-visible {
+  background: var(--color-rojo);
+  color: var(--color-negro);
+  box-shadow: 0 0 15px rgba(255, 23, 68, 0.5);
+  outline: none;
+}
+
+.cerrar:active {
+  transform: scale(0.95);
+}
+
+/* =========================================================
+   IMAGEN DEL MODAL
+========================================================= */
+
+.modal-imagen {
+  width: 100%;
+  height: var(--modal-img-height);
+  object-fit: cover;
+  margin-bottom: var(--espacio-xl);
+  border: 2px solid var(--color-borde);
+  border-radius: var(--radio-md);
+  box-shadow: 0 0 15px rgba(0, 102, 255, 0.15);
+}
+
+/* =========================================================
+   TÍTULO DEL MODAL
+========================================================= */
+
+.modal-contenido h2 {
+  color: var(--color-rojo);
+  font-family: var(--fuente-titulo);
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: var(--espacio-md);
+  text-shadow: 2px 2px 0 #43000c;
+  line-height: 1.2;
+}
+
+/* =========================================================
+   DESCRIPCIÓN DEL MODAL
+========================================================= */
+
+#modalDescripcion {
+  color: var(--color-blanco);
+  font-size: var(--tamano-base);
+  line-height: 1.65;
+  margin-bottom: var(--espacio-xl);
+}
+
+/* =========================================================
+   PRECIO BASE DEL MODAL
+========================================================= */
+
+.modal-precio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--espacio-md) 0;
+  margin-bottom: var(--espacio-xl);
+  border-top: 1px solid var(--color-borde);
+  border-bottom: 1px solid var(--color-borde);
+}
+
+.modal-precio span {
+  color: var(--color-gris);
+  font-size: var(--tamano-lg);
+}
+
+.modal-precio strong {
+  color: var(--color-azul-3);
+  font-size: 1.75rem;
+  font-weight: 900;
+  text-shadow: 0 0 8px rgba(0, 200, 255, 0.35);
+}
+
+/* =========================================================
+   SECCIÓN COMBO
+========================================================= */
+
+.combo {
+  position: relative;
+  padding: var(--espacio-xl);
+  background: linear-gradient(135deg, #0d1016, #050609);
+  border: 2px solid var(--color-azul-1);
+  border-radius: var(--radio-md);
+  box-shadow: inset 0 0 20px rgba(0, 102, 255, 0.06);
+  overflow: hidden;
+}
+
+.combo::before {
+  content: "COMBO";
+  position: absolute;
+  top: 8px;
+  right: -30px;
+  padding: 4px 35px;
+  background: var(--color-rojo);
+  color: var(--color-negro);
+  font-size: var(--tamano-xs);
+  font-weight: 900;
+  transform: rotate(35deg);
+  white-space: nowrap;
+}
+
+.combo-titulo {
+  color: var(--color-rojo);
+  font-size: 1.25rem;
+  font-weight: 900;
+  margin-bottom: var(--espacio-md);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.combo > p {
+  color: var(--color-gris);
+  margin-bottom: var(--espacio-md);
+  font-size: var(--tamano-sm);
+}
+
+.combo ul {
+  list-style: none;
+  margin-bottom: var(--espacio-xl);
+  padding: 0;
+}
+
+.combo li {
+  color: var(--color-blanco);
+  padding: var(--espacio-xs) 0;
+  font-size: var(--tamano-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-sm);
+}
+
+.combo-precio {
+  color: var(--color-azul-3);
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin-bottom: var(--espacio-xl);
+}
+
+/* Checkbox del combo */
+.combo-check {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-md);
+  padding: var(--espacio-md);
+  background: rgba(0, 102, 255, 0.07);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-sm);
+  color: var(--color-blanco);
+  font-weight: 600;
+  cursor: pointer;
+  font-size: var(--tamano-base);
+  transition: all var(--transicion-rapida);
+  touch-action: manipulation;
+}
+
+.combo-check:hover {
+  border-color: var(--color-azul-3);
+  background: rgba(0, 140, 255, 0.1);
+}
+
+.combo-check:focus-within {
+  outline: 2px solid var(--color-azul-3);
+  outline-offset: 2px;
+}
+
+.combo-check input {
+  width: 24px;
+  height: 24px;
+  accent-color: var(--color-rojo);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   PRECIO FINAL
+========================================================= */
+
+.precio-final {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: var(--espacio-xl);
+  padding: var(--espacio-lg) var(--espacio-sm) var(--espacio-sm);
+  border-top: 2px solid var(--color-azul-2);
+}
+
+.precio-final span {
+  color: var(--color-blanco);
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.precio-final strong {
+  color: var(--color-azul-3);
+  font-size: 1.875rem;
+  font-weight: 900;
+  text-shadow: 0 0 10px rgba(0, 200, 255, 0.5);
+}
+
+/* =========================================================
+   ESTADO OCULTO PARA COMBO
+========================================================= */
+
+.combo.oculto {
+  display: none;
+}

@@ -1,0 +1,115 @@
+/* =========================================================
+   CARTA COMICS - VARIABLES CSS
+   Colores, sombras, tamaños, espacios y radios
+========================================================= */
+
+:root {
+  /* Colores base */
+  --color-negro: #050505;
+  --color-negro-card: #0b0d12;
+  --color-negro-panel: #080a0f;
+  --color-negro-header: #030303;
+
+  --color-rojo: #ff1744;
+  --color-rojo-oscuro: #8b001b;
+  --color-rojo-brillante: #ff003c;
+  --color-rojo-sombra: rgba(255, 23, 68, 0.45);
+
+  --color-blanco: #ffffff;
+  --color-gris: #c7cbd4;
+  --color-gris-oscuro: #9aa0ad;
+
+  --color-azul-1: #0055ff;
+  --color-azul-2: #008cff;
+  --color-azul-3: #00c8ff;
+  --color-azul-4: #0066cc;
+  --color-azul-5: #0070dd;
+  --color-azul-6: #00aaff;
+  --color-azul-7: #003b88;
+  --color-azul-8: #0088dd;
+
+  --color-borde: #174f91;
+  --color-borde-claro: #173b67;
+
+  /* Sombras */
+  --sombra-roja: 0 0 8px var(--color-rojo-sombra);
+  --sombra-azul: 0 0 10px rgba(0, 140, 255, 0.45);
+  --sombra-card: 0 8px 20px rgba(0, 0, 0, 0.5);
+  --sombra-card-hover: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 140, 255, 0.28);
+  --sombra-modal: 0 0 35px rgba(0, 140, 255, 0.3), 0 20px 50px rgba(0, 0, 0, 0.8);
+  --sombra-header: 0 5px 30px rgba(0, 102, 255, 0.18);
+  --sombra-logo: 0 0 8px rgba(0, 200, 255, 0.5), inset 0 0 20px rgba(0, 140, 255, 0.08);
+
+  /* Radios */
+  --radio-xs: 4px;
+  --radio-sm: 8px;
+  --radio-md: 12px;
+  --radio-lg: 18px;
+  --radio-xl: 24px;
+  --radio-full: 50%;
+  --radio-pill: 9999px;
+
+  /* Espaciado */
+  --espacio-xs: 4px;
+  --espacio-sm: 8px;
+  --espacio-md: 12px;
+  --espacio-lg: 16px;
+  --espacio-xl: 20px;
+  --espacio-2xl: 24px;
+  --espacio-3xl: 32px;
+  --espacio-4xl: 40px;
+
+  /* Tipografía */
+  --fuente-titulo: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  --fuente-cuerpo: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --fuente-mono: "SF Mono", "Fira Code", "Fira Mono", Menlo, Consolas, monospace;
+
+  --tamano-xs: 0.75rem;
+  --tamano-sm: 0.875rem;
+  --tamano-base: 1rem;
+  --tamano-lg: 1.125rem;
+  --tamano-xl: 1.25rem;
+  --tamano-2xl: 1.5rem;
+  --tamano-3xl: 1.875rem;
+  --tamano-4xl: 2.25rem;
+  --tamano-5xl: 3rem;
+  --tamano-6xl: 3.75rem;
+
+  /* Transiciones */
+  --transicion-rapida: 150ms ease;
+  --transicion-normal: 250ms ease;
+  --transicion-lenta: 350ms ease;
+
+  /* Z-index */
+  --z-header: 100;
+  --z-modal-backdrop: 900;
+  --z-modal: 1000;
+  --z-tooltip: 1100;
+
+  /* Breakpoints */
+  --bp-mobile: 480px;
+  --bp-tablet: 768px;
+  --bp-desktop: 1024px;
+  --bp-wide: 1280px;
+  --bp-ultrawide: 1440px;
+
+  /* Contenedor */
+  --contenedor-max: 1250px;
+  --contenedor-padding: 16px;
+
+  /* Header */
+  --header-height: auto;
+  --logo-size: 170px;
+
+  /* Product card */
+  --card-img-height-mobile: 140px;
+  --card-img-height-tablet: 180px;
+  --card-img-height-desktop: 210px;
+  --card-padding: 12px;
+  --card-gap: 16px;
+
+  /* Modal */
+  --modal-max-width: 520px;
+  --modal-img-height: 220px;
+  --modal-padding: 20px;
+}
